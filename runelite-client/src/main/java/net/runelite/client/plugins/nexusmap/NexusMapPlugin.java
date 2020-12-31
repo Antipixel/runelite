@@ -47,9 +47,6 @@ public class NexusMapPlugin extends Plugin
     @Subscribe
     public void onWidgetLoaded(WidgetLoaded e)
     {
-
-        client.setVarbit(Varbits.TEST, 1);
-
         if (e.getGroupId() == 17)
         {
             Widget w = client.getWidget(17, 7);
