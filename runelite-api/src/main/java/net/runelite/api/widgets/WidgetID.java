@@ -164,6 +164,7 @@ public class WidgetID
 	public static final int DUEL_INVENTORY_GROUP_ID = 421;
 	public static final int DUEL_INVENTORY_OTHER_GROUP_ID = 481;
 	public static final int TRAILBLAZER_AREAS_GROUP_ID = 512;
+	public static final int NEXUS_TELEPORT_ID = 17;
 
 	static class WorldMap
 	{
@@ -952,5 +953,21 @@ public class WidgetID
 	static class TrailblazerAreas
 	{
 		static final int TELEPORT = 59;
+	}
+
+	static class PortalNexus
+	{
+		static final int TELE_PORTAL_PANEL = 2;
+		static final int TELE_PORTAL_MODEL = 3;
+		static final int TELE_SCRY_TEXT = 4;
+		static final int TELE_SCRY_SELECT = 5;
+		static final int TELE_KEYEVENTS_ALTERNATE = 7;
+		static final int TELE_KEYEVENTS_PRIMARY = 8;
+		static final int TELE_SCROLLBOX_BORDER = 9;
+		static final int TELE_SCRY_RADIO_PANE = 10;
+		static final int TELE_TELEPORT_LIST = 11;
+		static final int TELE_LOC_LABELS_PRIMARY = 12;
+		static final int TELE_SCROLLBAR = 14;
+		static final int TELE_LOC_LABELS_ALTERNATE = 16;
 	}
 }

@@ -2,8 +2,18 @@ package net.runelite.client.plugins.nexusmap;
 
 public class Teleport
 {
-	private boolean alternate;
+	private String name;
 	private int childIndex;
+	private String keyShortcut;
+	private boolean alternate;
+
+	public Teleport(String name, int childIndex, String key, boolean alt)
+	{
+		this.name = name;
+		this.childIndex = childIndex;
+		this.keyShortcut = key;
+		this.alternate = alt;
+	}
 
 	/**
 	 *
@@ -20,8 +30,18 @@ public class Teleport
 	 * Grand Exchange on the Varrock teleport spell
 	 * @return true if is alternate location, otherwise false
 	 */
-	public boolean isAlternate()
+	public boolean isAlt()
 	{
 		return this.alternate;
+	}
+
+
+	/**
+	 * The keyboard shortcut key used to activate this teleport
+	 * @return the shortcut key
+	 */
+	public String getKeyShortcut()
+	{
+		return this.keyShortcut;
 	}
 }
