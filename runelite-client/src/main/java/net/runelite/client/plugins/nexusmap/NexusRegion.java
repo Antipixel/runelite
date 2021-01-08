@@ -10,6 +10,8 @@ public class NexusRegion
 	private String name;
 	private int regionMapSprite;
 	private int fullMapSprite;
+	private int iconSpriteStd;
+	private int iconSpriteHov;
 
 	private int iconX;
 	private int iconY;
@@ -23,6 +25,8 @@ public class NexusRegion
 
 		this.regionMapSprite = -1;
 		this.fullMapSprite = -1;
+		this.iconSpriteStd = -1;
+		this.iconSpriteHov = -1;
 
 		this.iconX = 0;
 		this.iconY = 0;
@@ -46,6 +50,12 @@ public class NexusRegion
 		this.fullMapSprite = fullSpriteID;
 	}
 
+	public void setIconSprites(int standard, int hover)
+	{
+		this.iconSpriteStd = standard;
+		this.iconSpriteHov = hover;
+	}
+
 	public int getRegionMapSprite()
 	{
 		return this.regionMapSprite;
@@ -54,6 +64,16 @@ public class NexusRegion
 	public int getFullMapSprite()
 	{
 		return this.fullMapSprite;
+	}
+
+	public int getIconSpriteStd()
+	{
+		return iconSpriteStd;
+	}
+
+	public int getIconSpriteHov()
+	{
+		return iconSpriteHov;
 	}
 
 	public void setIconX(int iconX)
