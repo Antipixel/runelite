@@ -1,6 +1,6 @@
 package net.runelite.client.plugins.nexusmap.ui;
 
-public interface ButtonMenuAction
+public interface MenuAction
 {
 	void onMenuAction();
 }
